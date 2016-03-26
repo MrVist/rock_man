@@ -1,0 +1,129 @@
+.rock-man {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.man-head {
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    animation: head-move 0.5s ease alternate infinite;
+}
+
+@keyframes head-move {
+    0% {
+        left: 80px;
+        transform: rotateZ(-25deg);
+    }
+    100% {
+        left: 120px;
+        transform: rotateZ(25deg);
+    }
+}
+
+.man-face {
+    width: 200px;
+    height: 180px;
+    background: #c3c17b;
+    border-radius: 50% 50% 40% 40%;
+    z-index: 1;
+    border:1px solid #ccc;
+}
+
+.man-eye-left {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.man-eye-right {
+    position: absolute;
+    top: 80px;
+    left: 155px;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.man-mouth {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 150px;
+    height: 60px;
+    border-bottom: 5px solid #905218;
+    border-left: 5px solid #c3c17b;
+    border-right: 5px solid #c3c17b;
+    border-radius: 50%;
+}
+
+.man-body {
+    width: 0;
+    height: 0;
+    margin: 100px auto auto auto;
+    border-bottom: 300px solid #c3c17f;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.man-arm-left {
+    position: absolute;
+    top: 240px;
+    left: 131px;
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(#c3c17f, #b3ae41);
+    border-radius: 50% 0 50% 50%;
+    transform: rotateZ(-35deg);
+    box-shadow: -1px 1px 3px -2px;
+}
+
+.man-arm-right {
+    position: absolute;
+    top: 240px;
+    left: 219px;
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(#c3c17f, #b3ae41);
+    border-radius: 0 50% 50% 50%;
+    transform: rotateZ(35deg);
+    box-shadow: 1px 1px 3px -2px;
+}
+
+.man-foot-left {
+    position: absolute;
+    top: 280px;
+    left: 10px;
+    width: 120px;
+    height: 150px;
+    background: #c3c17f;
+    border-radius: 50% 50% 45% 45%;
+    border: 1px solid #ccc;
+    transform: rotateZ(-20deg);
+    box-shadow: -2px 1px 3px;
+}
+
+.man-foot-right {
+    position: absolute;
+    top: 280px;
+    left: 260px;
+    width: 120px;
+    height: 150px;
+    background: #c3c17f;
+    border-radius: 50% 50% 45% 45%;
+    border: 1px solid #ccc;
+    transform: rotateZ(20deg);
+    box-shadow: -2px 3px 1px -1px;
+}
